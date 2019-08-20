@@ -1,12 +1,13 @@
-package com.diego.demo.entity;
+package com.diego.entity;
 
 import javax.persistence.*;
 
-@Entity
-public class Role {
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class RoleMongo {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
 

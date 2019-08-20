@@ -1,4 +1,4 @@
-package com.diego.demo.entity;
+package com.diego.entity;
 
 import java.util.Set;
 
@@ -18,6 +18,16 @@ public class User {
 	private String email;
 	
 	
+	public User() {
+		
+	}
+
+	public User(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
+
 	@ManyToMany
 	private Set<Role> roles;
 	
